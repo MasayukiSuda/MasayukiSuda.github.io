@@ -3,6 +3,7 @@
 正方位線をマップ上に描画し、使いやすいインターフェースで探せます。<br>
 自分の吉方位を地図で探してみましょう。
 
+<a href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%A1%E3%81%93%E3%81%A1%E5%90%89%E6%96%B9%E4%BD%8D%E3%83%9E%E3%83%83%E3%83%97/id953373015"><img src="https://raw.githubusercontent.com/MasayukiSuda/MasayukiSuda.github.io/master/images/btn_appstore.png"></a><a href="https://play.google.com/store/apps/details?id=com.daasuu.achikochikichihoui&hl=ja"><img src="https://raw.githubusercontent.com/MasayukiSuda/MasayukiSuda.github.io/master/images/btn_googleplay.png">
 ### 使い方
 
 ・ボタンを押して、自宅を設定♪
