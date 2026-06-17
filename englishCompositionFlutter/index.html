@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瞬間英作文　日本語を見て瞬時に英語へ！英作文トレーニングアプリ</title>
+    <link rel="icon" href="app_icon.png">
+    <style>
+        :root {
+            --green: #4CAF50;
+            --teal: #18BFA5;
+            --ink: #1f2d27;
+            --muted: #5b6b63;
+            --bg: #f4faf6;
+            --card: #ffffff;
+            --grad: linear-gradient(135deg, #18BFA5 0%, #4CAF50 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+            line-height: 1.85;
+            color: var(--ink);
+            background: var(--bg);
+        }
+        a { color: var(--green); }
+
+        /* Hero */
+        .hero {
+            background: var(--grad);
+            color: #fff;
+            text-align: center;
+            padding: 64px 20px 72px;
+        }
+        .hero img.icon {
+            width: 104px;
+            height: 104px;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+            background: #fff;
+        }
+        .hero h1 {
+            margin: 22px 0 6px;
+            font-size: 2rem;
+            letter-spacing: 0.04em;
+        }
+        .hero p.tag {
+            margin: 0;
+            font-size: 1.02rem;
+            opacity: 0.95;
+        }
+
+        /* Layout */
+        main {
+            max-width: 760px;
+            margin: -36px auto 0;
+            padding: 0 16px 64px;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(31,45,39,0.08);
+            padding: 28px 26px;
+            margin-bottom: 22px;
+        }
+        .lead {
+            font-size: 1.05rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 0 0 18px;
+            padding-left: 12px;
+            border-left: 5px solid var(--teal);
+        }
+
+        .features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .features li {
+            padding: 16px 0;
+            border-bottom: 1px solid #eef3f0;
+        }
+        .features li:last-child { border-bottom: none; }
+        .features .ftitle {
+            display: block;
+            font-weight: 700;
+            color: var(--green);
+            margin-bottom: 2px;
+        }
+        .features .ftitle::before {
+            content: "✓";
+            display: inline-block;
+            width: 1.4em;
+            color: var(--teal);
+            font-weight: 700;
+        }
+        .features .fdesc {
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .reco { padding-left: 1.3em; margin: 0; color: var(--muted); }
+        .reco li { margin-bottom: 8px; }
+
+        footer {
+            text-align: center;
+            color: #7a8a82;
+            font-size: 0.85rem;
+            padding: 28px 20px 56px;
+        }
+        footer a { text-decoration: none; font-weight: 600; }
+        .contact { color: var(--muted); }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <img class="icon" src="app_icon.png" alt="瞬間英作文 アイコン">
+        <h1>瞬間英作文</h1>
+        <p class="tag">日本語を見て瞬時に英語へ！英作文トレーニングアプリ</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <p class="lead">「瞬間英作文」は、日本語の文を見て瞬時に英語で表現する力を鍛える学習アプリです。約2,000問のトレーニングを通して、英語を「考えてから話す」状態から「反射的に口に出せる」状態へ。完全無料で使えます。</p>
+        </section>
+
+        <section class="card">
+            <h2>主な特徴</h2>
+            <ul class="features">
+                <li>
+                    <span class="ftitle">2つの出題モードで飽きずに続けられる</span>
+                    <span class="fdesc">自由入力の「英作文モード」と、単語を並べ替える「語順モード」をカテゴリーごとに選択。レベルや気分に合わせて学習できます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">AIがあなたの解答を添削</span>
+                    <span class="fdesc">入力した英文をAIが評価。すべて端末内（オンデバイス）で処理され、解答が外部に送信されることはなく、オフラインでも安心です。</span>
+                </li>
+                <li>
+                    <span class="ftitle">発音を聴いて、リスニング・スピーキング対策</span>
+                    <span class="fdesc">英文を音声で読み上げ。正しい発音を聴きながら、話す力も身につけられます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">学習記録が貯まってモチベーションが上がる</span>
+                    <span class="fdesc">学習内容はすべて蓄積・可視化。間違えた問題は優先的に復習へ出題され、効率よく弱点を克服できます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">完全無料・広告は少なめ</span>
+                    <span class="fdesc">操作を邪魔する全画面広告などはありません。サクサク使えます。</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>こんな人におすすめ</h2>
+            <ul class="reco">
+                <li>英会話で「言いたいことがすぐ英語にならない」と感じている方</li>
+                <li>通勤・通学などのスキマ時間を英語学習に活かしたい方</li>
+                <li>単語暗記だけでなく、英文を組み立てるトレーニングがしたい方</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="privacy-policy.html">プライバシーポリシー</a></p>
+        <p class="contact">お問い合わせ：topman31daasuu@gmail.com</p>
+        <p>&copy; Masayuki Suda</p>
+    </footer>
+</body>
+</html>
