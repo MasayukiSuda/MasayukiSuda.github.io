@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Word — 4,000 Japanese words with furigana, readings and example sentences</title>
+    <meta name="description" content="Learn to read Japanese words, not just recognise them. 4,000 words across 40 stages, JLPT N5 to N2, with furigana and hand-written example sentences. Works offline.">
+    <link rel="icon" href="app_icon.png">
+    <style>
+        :root {
+            --navy: #000064;
+            --orange: #FF8900;
+            --ink: #1b1b2e;
+            --muted: #5b5b73;
+            --bg: #f6f6fb;
+            --card: #ffffff;
+            --grad: linear-gradient(135deg, #000064 0%, #2a2a96 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Sans", sans-serif;
+            line-height: 1.85;
+            color: var(--ink);
+            background: var(--bg);
+        }
+        a { color: var(--navy); }
+
+        /* Hero */
+        .hero {
+            background: var(--grad);
+            color: #fff;
+            text-align: center;
+            padding: 64px 20px 72px;
+        }
+        .hero img.icon {
+            width: 104px;
+            height: 104px;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+            background: #fff;
+        }
+        .hero h1 {
+            margin: 22px 0 6px;
+            font-size: 2rem;
+            letter-spacing: 0.04em;
+        }
+        .hero p.tag {
+            margin: 0;
+            font-size: 1.02rem;
+            opacity: 0.95;
+        }
+
+        /* Layout */
+        main {
+            max-width: 760px;
+            margin: -36px auto 0;
+            padding: 0 16px 64px;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(27,27,46,0.08);
+            padding: 28px 26px;
+            margin-bottom: 22px;
+        }
+        .lead {
+            font-size: 1.05rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 0 0 18px;
+            padding-left: 12px;
+            border-left: 5px solid var(--orange);
+        }
+
+        .features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .features li {
+            padding: 16px 0;
+            border-bottom: 1px solid #eeeef4;
+        }
+        .features li:last-child { border-bottom: none; }
+        .features .ftitle {
+            display: block;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 2px;
+        }
+        .features .ftitle::before {
+            content: "✓";
+            display: inline-block;
+            width: 1.4em;
+            color: var(--orange);
+            font-weight: 700;
+        }
+        .features .fdesc {
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .reco { padding-left: 1.3em; margin: 0; color: var(--muted); }
+        .reco li { margin-bottom: 8px; }
+
+        /* A sample card, drawn the way the app draws one. */
+        .sample {
+            text-align: center;
+            border: 1px solid #eeeef4;
+            border-radius: 14px;
+            padding: 22px 16px;
+            margin-top: 18px;
+            background: #fbfbfe;
+        }
+        .sample .word {
+            font-size: 2.6rem;
+            line-height: 1.2;
+            font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+        }
+        .sample .reading {
+            font-size: 1.1rem;
+            color: var(--navy);
+            font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+        }
+        .sample .romaji { font-size: 0.85rem; color: var(--muted); }
+        .sample .meaning { margin-top: 6px; }
+        .sample .example {
+            margin-top: 10px;
+            color: var(--muted);
+            font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+        }
+        .sample ruby rt { font-size: 0.5em; color: var(--muted); }
+
+        .note {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        footer {
+            text-align: center;
+            color: #7a7a90;
+            font-size: 0.85rem;
+            padding: 28px 20px 56px;
+        }
+        footer a { text-decoration: none; font-weight: 600; }
+        .contact { color: var(--muted); }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <img class="icon" src="app_icon.png" alt="Japanese Word app icon">
+        <h1>Japanese Word</h1>
+        <p class="tag">4,000 Japanese words with furigana, readings and example sentences</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <p class="lead">Learn to read Japanese words, not just recognise them. Japanese Word teaches 4,000 words across 40 stages of 100, from the first hundred a beginner meets up to the most common words at intermediate level. Every word comes with its reading in kana, its romaji, its part of speech, an English meaning, and an example sentence written by hand — with furigana over the kanji.</p>
+
+            <div class="sample">
+                <div class="word">人</div>
+                <div class="reading">ひと</div>
+                <div class="romaji">hito</div>
+                <div class="meaning">person; someone; somebody</div>
+                <div class="example">あの<ruby>人<rt>ひと</rt></ruby>は<ruby>先生<rt>せんせい</rt></ruby>です。</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Four ways to study each stage</h2>
+            <ul class="features">
+                <li>
+                    <span class="ftitle">Flashcards</span>
+                    <span class="fdesc">The word, then its reading, then its meaning and example. Tap through at your own pace.</span>
+                </li>
+                <li>
+                    <span class="ftitle">Meaning quiz</span>
+                    <span class="fdesc">Pick the English meaning. Ten questions a sitting: seven words you have not been asked about yet, and three coming back.</span>
+                </li>
+                <li>
+                    <span class="ftitle">Reading quiz</span>
+                    <span class="fdesc">How is the underlined word read, inside a real sentence? This is the part learners find hardest — and the reason a bare kanji is never the question. The sentence is what makes one reading the right one.</span>
+                </li>
+                <li>
+                    <span class="ftitle">Sentence building</span>
+                    <span class="fdesc">Tap the tiles back into order. No typing, and no IME.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>What the app remembers</h2>
+            <ul class="features">
+                <li>
+                    <span class="ftitle">Progress is tracked per mode</span>
+                    <span class="fdesc">A word you can read but cannot translate is not counted as known. Words you get wrong collect in a review list and leave it by themselves the moment you get them right — there is no flag to clear.</span>
+                </li>
+                <li>
+                    <span class="ftitle">Streaks, counts and JLPT levels</span>
+                    <span class="fdesc">The record tab keeps your study streak, how many words you have studied and mastered, a fortnight of daily counts, and progress bars per JLPT level.</span>
+                </li>
+                <li>
+                    <span class="ftitle">Tests that sample what you have finished</span>
+                    <span class="fdesc">A proficiency test spreads its questions across the stages you have completed rather than drawing them all from one, and a level-up test sits at each JLPT boundary.</span>
+                </li>
+                <li>
+                    <span class="ftitle">Your own word list</span>
+                    <span class="fdesc">Star any word to keep it in your own list, and study that list on its own.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Reading help you can turn off</h2>
+            <p class="note">Furigana and romaji are switches, not decoration: leave them on while you are starting out and turn them off when you want to read the kanji. The Japanese voice reads a word by its reading, so 後 is never read aloud as the wrong one of あと, うしろ, ご and のち.</p>
+            <p class="note">A daily reminder, at a time and on the weekdays you choose.</p>
+        </section>
+
+        <section class="card">
+            <h2>Nothing leaves your device</h2>
+            <p class="note">No account, no sign-in, no ads, and no analytics. The word list ships inside the app, so everything — every quiz, every score, the reminder — works with no network at all. Your study record is stored on your device and nowhere else, and Settings can delete it.</p>
+        </section>
+
+        <section class="card">
+            <h2>Who it is for</h2>
+            <ul class="reco">
+                <li>English speakers starting Japanese who want to read kanji, not just recognise words</li>
+                <li>Learners working towards JLPT N5, N4 or N3</li>
+                <li>Anyone who wants a vocabulary app that works on a plane, on the underground, or with the network off</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>About the word data</h2>
+            <p class="note">The words, readings and meanings come from <a href="https://www.edrdg.org/jmdict/j_jmdict.html" target="_blank" rel="noopener">JMdict</a>, © Electronic Dictionary Research and Development Group, used under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> and modified for this app.</p>
+            <p class="note">The JLPT levels are estimates. JEES and the Japan Foundation publish no official vocabulary lists, so the levels here are this app's best reading of which words belong where, not the exam's.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="privacy-policy.html">Privacy policy</a></p>
+        <p class="contact">Contact: topman31daasuu@gmail.com</p>
+        <p>&copy; Masayuki Suda</p>
+    </footer>
+</body>
+</html>
