@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英検®2級 高校英語 瞬間英作文｜日本語を見て英文を即座に書くトレーニング</title>
+    <meta name="description" content="英検®2級レベル（高校卒業程度）の文法30項目を軸に、日本語文を見て英文を即座に書く練習ができる学習アプリ（非公式）。文法別1,500文。無料・広告なしで、学習記録は端末内にだけ保存されます。">
+    <link rel="icon" href="app_icon.png">
+    <style>
+        :root {
+            --indigo: #1B5E20;
+            --teal: #43A047;
+            --amber: #FFC107;
+            --ink: #1f2733;
+            --muted: #5b6572;
+            --bg: #f5f7fb;
+            --card: #ffffff;
+            --grad: linear-gradient(135deg, #1B5E20 0%, #43A047 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+            line-height: 1.85;
+            color: var(--ink);
+            background: var(--bg);
+        }
+        a { color: var(--indigo); }
+
+        /* Hero */
+        .hero {
+            background: var(--grad);
+            color: #fff;
+            text-align: center;
+            padding: 64px 20px 72px;
+        }
+        .hero img.icon {
+            width: 104px;
+            height: 104px;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+            background: #fff;
+        }
+        .hero h1 {
+            margin: 22px 0 6px;
+            font-size: 1.85rem;
+            letter-spacing: 0.03em;
+        }
+        .hero p.tag {
+            margin: 0;
+            font-size: 1.02rem;
+            opacity: 0.95;
+        }
+        .hero p.unofficial {
+            margin: 14px auto 0;
+            max-width: 34em;
+            font-size: 0.86rem;
+            opacity: 0.9;
+        }
+
+        /* Layout */
+        main {
+            max-width: 760px;
+            margin: -36px auto 0;
+            padding: 0 16px 64px;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(31,39,51,0.08);
+            padding: 28px 26px;
+            margin-bottom: 22px;
+        }
+        .lead {
+            font-size: 1.05rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 0 0 18px;
+            padding-left: 12px;
+            border-left: 5px solid var(--teal);
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 22px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        .stats li {
+            flex: 1 1 150px;
+            background: #f2f5fa;
+            border-radius: 12px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+        .stats .num {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--indigo);
+            line-height: 1.4;
+        }
+        .stats .label {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .features li {
+            padding: 16px 0;
+            border-bottom: 1px solid #eef1f6;
+        }
+        .features li:last-child { border-bottom: none; }
+        .features .ftitle {
+            display: block;
+            font-weight: 700;
+            color: var(--indigo);
+            margin-bottom: 2px;
+        }
+        .features .ftitle::before {
+            content: "✓";
+            display: inline-block;
+            width: 1.4em;
+            color: var(--teal);
+            font-weight: 700;
+        }
+        .features .fdesc {
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .reco { padding-left: 1.3em; margin: 0; color: var(--muted); }
+        .reco li { margin-bottom: 8px; }
+
+        .cats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .cats li {
+            font-size: 0.86rem;
+            color: var(--muted);
+            background: #f2f5fa;
+            border-radius: 999px;
+            padding: 4px 12px;
+        }
+
+        .notice {
+            border-left: 5px solid var(--amber);
+            padding-left: 14px;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        .notice p { margin: 0 0 6px; }
+        .notice p:last-child { margin-bottom: 0; }
+
+        footer {
+            text-align: center;
+            color: #78828f;
+            font-size: 0.85rem;
+            padding: 28px 20px 56px;
+        }
+        footer a { text-decoration: none; font-weight: 600; }
+        .contact { color: var(--muted); }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <img class="icon" src="app_icon.png" alt="英検®2級 高校英語 瞬間英作文 アイコン">
+        <h1>英検®2級 高校英語 瞬間英作文</h1>
+        <p class="tag">日本語を見て、英文を即座に書く。高校卒業程度の文法を30項目で総仕上げ。</p>
+        <p class="unofficial">英検®は、公益財団法人 日本英語検定協会の登録商標です。本アプリは同協会とは一切関係のない非公式アプリです。</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <p class="lead">「英検®2級 高校英語 瞬間英作文」は、日本語の文を見てすぐに英語で言う・書く「瞬間英作文」で、英検®2級レベル（高校卒業程度）の英文法を身につける学習アプリです。文法を30項目に分け、1項目50文、合計1,500文を収録。ライティング（要約・意見論述）と二次試験（面接）の練習もできます。<strong>無料・広告なし</strong>。アカウント登録は不要で、問題データはアプリに同梱、学習記録は端末内にだけ保存されます。AI 添削も端末の中だけで動きます。</p>
+            <ul class="stats">
+                <li><span class="num">1,500</span><span class="label">文法別の収録文</span></li>
+                <li><span class="num">30</span><span class="label">文法カテゴリ</span></li>
+                <li><span class="num">0円</span><span class="label">無料・広告なし</span></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>主な特徴</h2>
+            <ul class="features">
+                <li>
+                    <span class="ftitle">2級の文法を30カテゴリで体系的に</span>
+                    <span class="fdesc">「準2級の総仕上げ」「2級の山」「論理と表現」の3グループ、1カテゴリ50文。時制と完了形・関係詞から、分詞構文・仮定法過去完了・強調構文・倒置、接続詞や論理をつなぐ語句まで一周できます。トピック別（教育・環境・テクノロジーなど）に横断して解くこともできます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">入力モードと並べかえモード</span>
+                    <span class="fdesc">キーボードで英文を入力するモードと、単語カードを並べかえて英文を組み立てるモード。自信のない文法は並べかえから、慣れてきたら入力で、と切り替えて練習できます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">試験を意識した正誤判定</span>
+                    <span class="fdesc">大文字・小文字や短縮形（I am / I'm）の違いは気にせず判定します。一方で冠詞の抜けや -s の付け忘れなど、試験で減点されやすい誤りは不正解とし、「惜しい!」のヒントでどこが違うかを教えます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">すべての文に文法と単語の解説</span>
+                    <span class="fdesc">なぜその形になるのかを、高校生にわかる言葉で短く解説。言いかえができる文には別解も用意しています。</span>
+                </li>
+                <li>
+                    <span class="ftitle">ライティング（要約・意見論述）</span>
+                    <span class="fdesc">3段落の英文を読んで短くまとめる要約と、TOPIC について理由を挙げて書く意見論述を、文の型と模範解答で練習できます。1文ずつ組み立てるモードと全文を自分で書くモードがあり、語数カウンタとセルフチェック付きです。</span>
+                </li>
+                <li>
+                    <span class="ftitle">二次試験（面接）</span>
+                    <span class="fdesc">パッセージについての質問（No.1）、3コマのイラストの説明（No.2）、意見を問う質問（No.3・No.4）への答え方と、聞き返しなどの決まり文句を練習できます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">AI添削は端末の中だけで（対応端末のみ）</span>
+                    <span class="fdesc">間違えた文やライティングの答えに、<strong>端末の OS が提供する AI</strong>（iPhone の Apple Intelligence、Android の AICore）がコメントします。書いた文が外部に送信されることはありません。対応していない端末ではこの機能は表示されません。AI のコメントは参考情報で、正誤の判定はアプリが行います。</span>
+                </li>
+                <li>
+                    <span class="ftitle">読み上げ・学習記録・リマインダー</span>
+                    <span class="fdesc">英文の読み上げ、苦手な文のブックマーク、習得した文・毎日の解答数の記録、実力テスト、学習のリマインダー通知（設定でオンにしたときだけ）。</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>収録している文法カテゴリ</h2>
+            <ul class="cats">
+                <li>時制と完了形</li>
+                <li>助動詞</li>
+                <li>助動詞 + 完了形</li>
+                <li>受動態</li>
+                <li>不定詞</li>
+                <li>動名詞</li>
+                <li>使役・知覚動詞</li>
+                <li>分詞（修飾・補語）</li>
+                <li>比較</li>
+                <li>関係詞の総まとめ</li>
+                <li>完了不定詞・動名詞</li>
+                <li>分詞構文</li>
+                <li>独立分詞構文・with</li>
+                <li>仮定法過去</li>
+                <li>仮定法過去完了</li>
+                <li>仮定法の応用</li>
+                <li>複合関係詞</li>
+                <li>強調構文</li>
+                <li>倒置</li>
+                <li>未来完了・未来進行</li>
+                <li>名詞節・同格の that</li>
+                <li>無生物主語</li>
+                <li>接続詞</li>
+                <li>論理をつなぐ語句</li>
+                <li>目的・結果の構文</li>
+                <li>否定の表現</li>
+                <li>動詞の語法</li>
+                <li>句動詞・熟語</li>
+                <li>it を使う構文</li>
+                <li>省略・挿入・代用</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>こんな人におすすめ</h2>
+            <ul class="reco">
+                <li>英検®2級の受験を控えていて、ライティングと二次試験に不安がある高校生</li>
+                <li>準2級の文法はわかるけれど、分詞構文・仮定法・強調構文・倒置で手が止まる方</li>
+                <li>高校英語の文法を総仕上げしたい、やり直したい社会人</li>
+                <li>要約・意見論述の型を、数をこなして身につけたい方</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>ご注意</h2>
+            <div class="notice">
+                <p>英検®は、公益財団法人 日本英語検定協会の登録商標です。</p>
+                <p>このコンテンツは、公益財団法人 日本英語検定協会の承認や推奨、その他の検討を受けたものではありません。</p>
+                <p>本アプリは公益財団法人 日本英語検定協会とは一切関係のない非公式アプリです。</p>
+                <p>本アプリは英検®の過去問を収録していません。掲載している英文はすべて本アプリが独自に作成したものです。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="privacy-policy.html">プライバシーポリシー</a></p>
+        <p class="contact">お問い合わせ：topman31daasuu@gmail.com</p>
+        <p>&copy; Masayuki Suda</p>
+    </footer>
+</body>
+</html>
