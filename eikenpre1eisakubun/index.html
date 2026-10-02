@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英検®準1級 瞬間英作文｜日本語を見て英文を即座に書くトレーニング</title>
+    <meta name="description" content="英検®準1級レベル（大学中級程度）の構文と表現30項目を軸に、日本語文を見て英文を即座に書く練習ができる学習アプリ（非公式）。構文・表現別1,500文。要約・意見論述・面接の練習も。無料・広告なしで、学習記録は端末内にだけ保存されます。">
+    <link rel="icon" href="app_icon.png">
+    <style>
+        :root {
+            --indigo: #A84300;
+            --teal: #FB8C00;
+            --amber: #1565C0;
+            --ink: #1f2733;
+            --muted: #5b6572;
+            --bg: #f5f7fb;
+            --card: #ffffff;
+            --grad: linear-gradient(135deg, #E65100 0%, #FFB300 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+            line-height: 1.85;
+            color: var(--ink);
+            background: var(--bg);
+        }
+        a { color: var(--indigo); }
+
+        /* Hero */
+        .hero {
+            background: var(--grad);
+            color: #fff;
+            text-align: center;
+            padding: 64px 20px 72px;
+        }
+        .hero img.icon {
+            width: 104px;
+            height: 104px;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+            background: #fff;
+        }
+        .hero h1 {
+            margin: 22px 0 6px;
+            font-size: 1.85rem;
+            letter-spacing: 0.03em;
+        }
+        .hero p.tag {
+            margin: 0;
+            font-size: 1.02rem;
+            opacity: 0.95;
+        }
+        .hero p.unofficial {
+            margin: 14px auto 0;
+            max-width: 34em;
+            font-size: 0.86rem;
+            opacity: 0.9;
+        }
+
+        /* Layout */
+        main {
+            max-width: 760px;
+            margin: -36px auto 0;
+            padding: 0 16px 64px;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(31,39,51,0.08);
+            padding: 28px 26px;
+            margin-bottom: 22px;
+        }
+        .lead {
+            font-size: 1.05rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 0 0 18px;
+            padding-left: 12px;
+            border-left: 5px solid var(--teal);
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 22px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        .stats li {
+            flex: 1 1 150px;
+            background: #f2f5fa;
+            border-radius: 12px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+        .stats .num {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--indigo);
+            line-height: 1.4;
+        }
+        .stats .label {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .features li {
+            padding: 16px 0;
+            border-bottom: 1px solid #eef1f6;
+        }
+        .features li:last-child { border-bottom: none; }
+        .features .ftitle {
+            display: block;
+            font-weight: 700;
+            color: var(--indigo);
+            margin-bottom: 2px;
+        }
+        .features .ftitle::before {
+            content: "✓";
+            display: inline-block;
+            width: 1.4em;
+            color: var(--teal);
+            font-weight: 700;
+        }
+        .features .fdesc {
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .reco { padding-left: 1.3em; margin: 0; color: var(--muted); }
+        .reco li { margin-bottom: 8px; }
+
+        .cats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .cats li {
+            font-size: 0.86rem;
+            color: var(--muted);
+            background: #f2f5fa;
+            border-radius: 999px;
+            padding: 4px 12px;
+        }
+
+        h3.group { font-size: 0.98rem; color: var(--indigo); margin: 18px 0 8px; }
+        h3.group:first-of-type { margin-top: 0; }
+
+        .notice {
+            border-left: 5px solid var(--amber);
+            padding-left: 14px;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        .notice p { margin: 0 0 6px; }
+        .notice p:last-child { margin-bottom: 0; }
+
+        footer {
+            text-align: center;
+            color: #78828f;
+            font-size: 0.85rem;
+            padding: 28px 20px 56px;
+        }
+        footer a { text-decoration: none; font-weight: 600; }
+        .contact { color: var(--muted); }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <img class="icon" src="app_icon.png" alt="英検®準1級 瞬間英作文 アイコン">
+        <h1>英検®準1級 瞬間英作文</h1>
+        <p class="tag">日本語を見て、英文を即座に書く。大学中級程度の構文と表現を30項目で。</p>
+        <p class="unofficial">英検®は、公益財団法人 日本英語検定協会の登録商標です。本アプリは同協会とは一切関係のない非公式アプリです。</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <p class="lead">「英検®準1級 瞬間英作文」は、日本語の文を見てすぐに英語で言う・書く「瞬間英作文」で、英検®準1級レベル（大学中級程度）の構文と表現を身につける学習アプリです。ライティングと面接で使う構文と表現を30項目に分け、1項目50文、合計1,500文を収録。ライティング（要約・意見論述）と二次試験（面接）の練習もできます。<strong>無料・広告なし</strong>。アカウント登録は不要で、問題データはアプリに同梱、学習記録は端末内にだけ保存されます。AI 添削も端末の中だけで動きます。</p>
+            <ul class="stats">
+                <li><span class="num">1,500</span><span class="label">構文・表現別の収録文</span></li>
+                <li><span class="num">30</span><span class="label">構文・表現の項目</span></li>
+                <li><span class="num">0円</span><span class="label">無料・広告なし</span></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>主な特徴</h2>
+            <ul class="features">
+                <li>
+                    <span class="ftitle">準1級の構文と表現を30項目で体系的に</span>
+                    <span class="fdesc">「2級までの総仕上げ」「論証の構文」「語彙と表現」の3グループ、1項目50文。仮定法・強調と倒置・名詞節と同格から、無生物主語・名詞構文・譲歩と対比・因果関係、コロケーション・句動詞・つなぎの語句まで一周できます。トピック別（教育・環境・テクノロジー・政治・経済など16の話題）に横断して解くこともできます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">入力モードと並べかえモード</span>
+                    <span class="fdesc">キーボードで英文を入力するモードと、単語カードを並べかえて英文を組み立てるモード。自信のない構文は並べかえから、慣れてきたら入力で、と切り替えて練習できます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">試験を意識した正誤判定</span>
+                    <span class="fdesc">大文字・小文字や短縮形（I am / I'm）の違いは気にせず判定します。一方で冠詞の抜けや -s の付け忘れなど、試験で減点されやすい誤りは不正解とし、「惜しい!」のヒントでどこが違うかを教えます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">すべての文に構文と語句の解説</span>
+                    <span class="fdesc">なぜその形になるのかを短く解説。言いかえができる文には別解も用意しています。</span>
+                </li>
+                <li>
+                    <span class="ftitle">ライティング（要約・意見論述）</span>
+                    <span class="fdesc">要約は3段落の元の英文32本とその模範要約32本、要約で使う文の型62文。意見論述は TOPIC と観点の語句（POINTS）を示した模範解答32本と、文の型60文。1文ずつ組み立てるモードと全文を自分で書くモードがあり、語数カウンタとセルフチェック付きです。</span>
+                </li>
+                <li>
+                    <span class="ftitle">二次試験（面接）</span>
+                    <span class="fdesc">4コマのイラストの流れを英語で語るナレーション（8話）、意見を問う質問（No.2〜No.4）への答え50文、No.1 と自由会話の答えや聞き返しなどの決まり文句50文を練習できます。</span>
+                </li>
+                <li>
+                    <span class="ftitle">苦手の復習と実力テスト</span>
+                    <span class="fdesc">答えた結果から「苦手」になった文だけを集めて復習できます。項目ごとの実力テストは、10問を1問も間違えずに解けたら合格です。</span>
+                </li>
+                <li>
+                    <span class="ftitle">AI添削は端末の中だけで（対応端末のみ）</span>
+                    <span class="fdesc">間違えた文やライティングの答えに、<strong>端末の OS が提供する AI</strong>（iPhone の Apple Intelligence、Android の AICore）がコメントします。書いた文が外部に送信されることはありません。対応していない端末ではこの機能は表示されません。AI のコメントは参考情報で、正誤の判定はアプリが行います。</span>
+                </li>
+                <li>
+                    <span class="ftitle">読み上げ・学習記録・リマインダー</span>
+                    <span class="fdesc">英文の読み上げ、苦手な文のブックマーク、習得した文・毎日の解答数の記録、学習のリマインダー通知（設定でオンにしたときだけ）。</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>収録している構文・表現の項目</h2>
+            <h3 class="group">2級までの総仕上げ</h3>
+            <ul class="cats">
+                <li>時制と完了形</li>
+                <li>助動詞と推量</li>
+                <li>受動態</li>
+                <li>不定詞と動名詞</li>
+                <li>分詞と分詞構文</li>
+                <li>関係詞</li>
+                <li>仮定法</li>
+                <li>比較</li>
+                <li>強調と倒置</li>
+                <li>名詞節と同格</li>
+            </ul>
+            <h3 class="group">論証の構文</h3>
+            <ul class="cats">
+                <li>無生物主語</li>
+                <li>名詞構文</li>
+                <li>譲歩と対比</li>
+                <li>因果関係</li>
+                <li>条件と前提</li>
+                <li>目的と手段</li>
+                <li>増減と数量</li>
+                <li>主張と意見</li>
+                <li>提案と必要性</li>
+                <li>否定と限定</li>
+            </ul>
+            <h3 class="group">語彙と表現</h3>
+            <ul class="cats">
+                <li>動詞の語法</li>
+                <li>コロケーション</li>
+                <li>句動詞</li>
+                <li>イディオム</li>
+                <li>形容詞の語法</li>
+                <li>群前置詞</li>
+                <li>つなぎの語句</li>
+                <li>it を使う構文</li>
+                <li>省略・挿入・代用</li>
+                <li>例示・言いかえ</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>こんな人におすすめ</h2>
+            <ul class="reco">
+                <li>英検®準1級の受験を控えていて、ライティングと二次試験に不安がある大学生・社会人・高校生</li>
+                <li>2級の文法はわかるけれど、論証の構文や言いかえで手が止まる方</li>
+                <li>要約・意見論述の型を、数をこなして身につけたい方</li>
+                <li>面接のナレーションや意見の述べ方を、すき間時間に練習したい方</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>ご注意</h2>
+            <div class="notice">
+                <p>英検®は、公益財団法人 日本英語検定協会の登録商標です。</p>
+                <p>このコンテンツは、公益財団法人 日本英語検定協会の承認や推奨、その他の検討を受けたものではありません。</p>
+                <p>本アプリは公益財団法人 日本英語検定協会とは一切関係のない非公式アプリです。</p>
+                <p>本アプリは英検®の過去問を収録していません。掲載している英文はすべて本アプリが独自に作成したものです。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="privacy-policy.html">プライバシーポリシー</a></p>
+        <p class="contact">お問い合わせ：topman31daasuu@gmail.com</p>
+        <p>&copy; Masayuki Suda</p>
+    </footer>
+</body>
+</html>
