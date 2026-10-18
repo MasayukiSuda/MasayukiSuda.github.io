@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Word Fill-In | Daily word fill-in puzzles</title>
+    <meta name="description" content="Fit every word from the list into a 6×6 grid. 100,000 puzzles with exactly one solution and a new Daily every day. Free, no ads, no account, works offline.">
+    <link rel="icon" href="app_icon.png">
+    <style>
+        :root {
+            --green: #58CC02;
+            --green-dark: #58A700;
+            --ink: #3C3C3C;
+            --muted: #777777;
+            --bg: #F7F7F7;
+            --card: #ffffff;
+            --grad: linear-gradient(135deg, #58A700 0%, #58CC02 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.75;
+            color: var(--ink);
+            background: var(--bg);
+        }
+        a { color: var(--green-dark); }
+
+        .hero {
+            background: var(--grad);
+            color: #fff;
+            text-align: center;
+            padding: 64px 20px 72px;
+        }
+        .hero img.icon {
+            width: 104px; height: 104px;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+        }
+        .hero h1 { margin: 22px 0 6px; font-size: 1.9rem; }
+        .hero p { margin: 0; font-size: 1.05rem; opacity: 0.95; }
+
+        main {
+            max-width: 760px;
+            margin: -36px auto 0;
+            padding: 0 16px 64px;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            padding: 28px 26px;
+            margin-bottom: 22px;
+        }
+        .lead { font-size: 1.05rem; color: var(--muted); margin: 0; }
+        h2 {
+            font-size: 1.15rem;
+            margin: 0 0 12px;
+            padding-left: 12px;
+            border-left: 5px solid var(--green);
+        }
+        ul { padding-left: 1.3em; margin: 0; }
+        li { margin-bottom: 8px; }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            padding: 10px 20px 56px;
+        }
+        footer a { text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <img class="icon" src="app_icon.png" alt="Endless Word Fill-In icon">
+        <h1>Endless Word Fill-In</h1>
+        <p>Fit every word in the grid</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <p class="lead">A small word puzzle you can finish in a few minutes, and then another, and another. Great for a coffee break, a commute, or a quick way to keep your English sharp.</p>
+        </section>
+
+        <section class="card">
+            <h2>Features</h2>
+            <ul>
+                <li>Fit every word from the list into the 6×6 grid</li>
+                <li>100,000 puzzles that get a little harder as you go</li>
+                <li>Every puzzle has exactly one solution, and you can always work out the next word without guessing</li>
+                <li>A new Daily puzzle every day, plus a calendar of past Dailies</li>
+                <li>Keep your streak going: solve at least one puzzle a day</li>
+                <li>See what each word means when you finish a puzzle</li>
+                <li>No ads, no accounts, no internet needed. Your progress stays on your device</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p>&copy; Masayuki Suda</p>
+    </footer>
+</body>
+</html>
